@@ -9,7 +9,7 @@
 //   console.log("Oppgave 2:", hp);
 // =====================================================
 
- console.log("Oppgave 2:", hp);
+ console.log(2 + 5)
 
 // ---------------- VARIABLER ----------------
 // En variabel er en navngitt boks som lagrer en verdi.
