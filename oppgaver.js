@@ -9,7 +9,6 @@
 //   console.log("Oppgave 2:", hp);
 // =====================================================
 
- console.log(2 + 5)
 
 // ---------------- VARIABLER ----------------
 // En variabel er en navngitt boks som lagrer en verdi.
@@ -21,6 +20,7 @@
 // Skriv ut begge på samme linje.
 // Forventet: Ola Nordmann  (men ditt navn)
 
+ console.log("Oppgave 1:")
 
 // Oppgave 2 (grunnleggende)
 // Lag let hp = 100. Spilleren blir truffet av en isbjørn og mister 30 hp.
