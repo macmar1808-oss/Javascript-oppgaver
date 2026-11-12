@@ -22,10 +22,18 @@
 
  console.log("Oppgave 1:")
 
+ let firstname = "Maria";
+ let lastname = "Mack";
+
 // Oppgave 2 (grunnleggende)
 // Lag let hp = 100. Spilleren blir truffet av en isbjørn og mister 30 hp.
 // Endre hp (uten let foran) og skriv den ut.
 // Forventet: 70
+
+console.log("Oppgave 2:")
+
+let hp = 100;
+hp -= 30;
 
 
 // Oppgave 3 (grunnleggende)
@@ -33,12 +41,23 @@
 // Skriv i oppgavearket hva feilmeldingen betyr, og fjern linja igjen.
 // Forventet: TypeError: Assignment to constant variable.
 
+console.log("Oppgave 3:")
+
+const PI = 3.14159;
+PI = 3.14159; //erroren er 
+
 
 // Oppgave 4 (middels)
 // Et spill på Steam koster 200 kr før moms. Lag const MOMS = 0.25 og let pris = 200.
 // Skriv ut prisen med moms.
 // Forventet: Pris med moms: 250 kr
 
+console.log("Oppgave 4:")
+
+const MOMS = 0.25;
+let pris = 200;
+
+const prismedmoms = MOMS * pris;
 
 // Oppgave 5 (avansert)
 // Lag disse som const eller let. Begrunn valgene i oppgavearket:
@@ -46,6 +65,12 @@
 // høyden på Fløya (671), temperaturen i Tromsø nå (-4).
 // Forventet: ingenting i konsollen
 
+console.log("Oppgave 5:")
+
+const maksspillere = 16; //Jeg lager det som const siden det er hvor mange spillere du kan ha, som ikke kan endres
+let antallliv = 3; //Grunnen til at det er let er fordi de kan fortsatt dø, så tallet kan bli mindre
+const fløyahøyde = 671; //Det ville vært veldig farlig hvis man endret høyden på et bygd
+let tromsøtemperatur = -4; // Temperatur kan endres seg etter tid
 
 // ---------------- TEKST OG TALL ----------------
 // Tekst (string) står i anførselstegn: "Kari". Tall (number) står uten: 17.
@@ -53,15 +78,25 @@
 //   %         rest etter deling: 7 % 2 gir 1
 //   `${navn} er ${alder} år`   setter variabler inn i tekst (backticks)
 
+
 // Oppgave 6 (grunnleggende)
 // Skriv ut typeof hp og typeof firstname.
 // Forventet: number
 //            string
 
+console.log("Oppgave 6:")
+
+typeof "hp";
+typeof "firstname";
+
 
 // Oppgave 7 (grunnleggende)
 // Bruk backticks og ${} til å skrive ut en setning med firstname og hp.
 // Forventet: Ola har 70 hp
+
+console.log("Oppgave 7:")
+
+typeof "'${firstname}' har '${hp} hp";
 
 
 // Oppgave 8 (middels)
@@ -71,6 +106,12 @@
 //            55
 //            10
 
+console.log("Oppgave 8:")
+
+typeof 5 + 5;
+typeof "5" + 5;
+typeof ("5") + 5;
+
 
 // Oppgave 9 (middels)
 // 17 elever skal deles i lag på 4. Bruk / og % .
@@ -78,6 +119,11 @@
 // Tips: Math.floor(17 / 4) runder ned.
 // Forventet: 4 lag
 //            1 til overs
+
+console.log("Oppgave 9:")
+
+let elever = 17;
+let lag = Math.floor(17 / 4);
 
 
 // ---------------- VALG MED IF ----------------
@@ -90,12 +136,25 @@
 // const temp = -8. Skriv ut "Kuldegrader" hvis temp er under 0.
 // Forventet: Kuldegrader
 
+console.log("Oppgave 10:")
+
+const temp = -8;
+if (temp < 0) {
+    result = "Kuldegrader"
+} 
 
 // Oppgave 11 (grunnleggende)
 // Bruk hp fra oppgave 2. Hvis hp er 0 eller mindre: "Game over".
 // Ellers: "Spillet fortsetter".
 // Forventet: Spillet fortsetter
 
+console.log("Oppgave 11:")
+
+if (hp >= 0) {
+    result = "Game over"
+} else {
+    result = "Spillet fortsetter"
+}
 
 // Oppgave 12 (middels)
 // const klokka = 21. Bruk if, else if og else:
@@ -103,6 +162,22 @@
 // Forventet: God kveld
 // Test også: endre klokka til 8 og kjør på nytt. Da skal det stå God morgen.
 
+console.log("Oppgave 12:")
+
+const klokka = 21;
+if (klokka > 10) {
+    result = "God morgen"
+} else {
+    result = "God kveld"
+}
+
+//Og her er testen
+const klokkatest = 8;
+if (klokka > 10) {
+    result = "God morgen"
+} else {
+    result = "God kveld"
+}
 
 // Oppgave 13 (middels)
 // Det er gode sjanser for nordlys når skydekket er under 30 OG klokka er 18 eller mer.
@@ -110,6 +185,24 @@
 // Forventet: Gode sjanser for nordlys
 // Test også: skydekke = 80 skal gi: Dårlige sjanser i kveld
 
+console.log("Oppgave 13:")
+
+const skydekke = 20;
+const time = 22;
+if (skydekke < 30 && time <= 18) {
+    result = "Gode sjanser for nordlys"
+} else {
+    result = "Dårlige sjanser i kveld"
+}
+
+//Og her er testen
+const skydekketest = 80;
+const timetest = 10;
+if (skydekke < 30 && time <= 18) {
+    result = "Gode sjanser for nordlys"
+} else {
+    result = "Dårlige sjanser i kveld"
+}
 
 // Oppgave 14 (avansert)
 // Billett til Fjellheisen: barn under 12 betaler 50 kr, 67 år og eldre betaler 60 kr,
