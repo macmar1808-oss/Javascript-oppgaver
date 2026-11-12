@@ -363,12 +363,13 @@ byer3.push("Hammerfest"); {
 
 console.log("Oppgave 23:")
 
-const temperatur = [-4, -6, -2, -1, -8, -11, -3]; 
-for (temperatur > -5); {
-    Object.keys(temperatur).length = length;
+//const temperatur = [-4, -6, -2, -1, -8, -11, -3]; 
+//for (temperatur) {
+//    Object.keys(temperatur).length = length;
 
-    System.out.println(length > -5);
-}
+//    System.out.println(length > -5);
+//}
+//AV EN ELLER ANNEN GRUNN FOR JEG EN ERROR, NÅR JEG SJEKKER HVA ERROREN ER SÅ SIER DEN AT JEG IKKE HAR ;, MEN JEG HAR JO DET. JEG LESTE NOE OM AT NEGATIVE TALL IKKE FUNKER I FOR-LOOPS, MEN JEG KLARER IKKE Å FÅ DET TIL Å IKKE GI EN ERROR!!!
 
 // Oppgave 24 (avansert)
 // const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"];
