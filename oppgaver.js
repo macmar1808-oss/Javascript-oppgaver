@@ -44,7 +44,7 @@ hp -= 30;
 console.log("Oppgave 3:")
 
 const PI = 3.14159;
-PI = 3.14159; //erroren er 
+PI = 3.14159; //erroren er TypeError: Assignment to constant variable
 
 
 // Oppgave 4 (middels)
@@ -209,6 +209,16 @@ if (skydekke < 30 && time <= 18) {
 // alle andre betaler 100 kr. Lag let alder og skriv ut prisen.
 // Forventet: alder 8 -> 50 kr,  alder 30 -> 100 kr,  alder 70 -> 60 kr
 
+console.log("Oppgave 14:")
+
+let alder = 12;
+if (alder > 12) {
+    result = "50 kr"
+} if (alder < 67) {
+    result = "60 kr"
+} else {
+    result = "100 kr"
+}
 
 // ---------------- LØKKER ----------------
 // En løkke gjentar kode.
@@ -223,23 +233,51 @@ if (skydekke < 30 && time <= 18) {
 //            4
 //            5
 
+console.log("Oppgave 15:")
+
+for (let i = 1; i < 6;) {
+    System.out.println(i);
+}
 
 // Oppgave 16 (grunnleggende)
 // En rakett skal skytes opp fra Andøya. Tell ned fra 10 til 1 med en for-løkke,
 // og skriv ut "Liftoff!" etter løkka.
 // Forventet: 10, 9, 8 ... 1 (én per linje), så Liftoff!
 
+console.log("Oppgave 16:")
+
+for (let i = 10; i < 1;) {
+    System.out.println(i + "Liftoff!");
+}
 
 // Oppgave 17 (middels)
 // Regn ut summen av alle tallene fra 1 til 100 med en løkke.
 // Tips: let sum = 0; før løkka.
 // Forventet: 5050
 
+console.log("Oppgave 17:")
+
+let sum = 0;
+for (let i = 1; i < 100;) {
+    sum = sum + i;
+    System.out.println(sum);
+}
+//Jeg var litt forvirret først av denne oppgaven, men jeg tror jeg fikk det til 
+
 
 // Oppgave 18 (middels)
 // Lag let bossHp = 100. Hvert slag tar 15 hp. Bruk en while-løkke og tell
 // hvor mange slag som trengs før bossHp er 0 eller mindre.
 // Forventet: 7 slag
+
+console.log("Oppgave 18:")
+
+let bossHp = 100;
+let slag = 15;
+while (bossHp > 0) {
+    
+}
+//Jeg klarte ikke å finne denne ut, jeg gikk bare over til en annen oppgave
 
 
 // Oppgave 19 (avansert)
@@ -248,6 +286,23 @@ if (skydekke < 30 && time <= 18) {
 // Tips: tall % 3 === 0 betyr delelig med 3.
 // Forventet: 1, 2, Nord, 4, Lys, Nord, 7, 8, Nord, Lys, 11, Nord, 13, 14, Nordlys
 
+console.log("Oppgave 19:")
+
+for (let i = 1; i < 15;) {
+    
+} if (i % 3) {
+    result = "Nord"
+
+    System.out.println(i + "Nord");
+} if (i % 5) {
+    result = "Lys"
+
+    System.out.println(i + "Lys");
+} if (i % 3 && 5) {
+    result = "Nordlys"
+
+    System.out.println(i + "Nordlys");
+} 
 
 // ---------------- ARRAYS ----------------
 // En array er en liste: const fag = ["Utvikling", "Driftstøtte"];
@@ -265,24 +320,55 @@ if (skydekke < 30 && time <= 18) {
 // Forventet: Tromsø
 //            5
 
+console.log("Oppgave 20:")
+
+const byer = ["Tromsø", "Bodø", "Alta", "Harstad", "Narvik"]; {
+    Object.keys(byer).length = length;
+    
+    System.out.println("Tromsø" + length);
+}
 
 // Oppgave 21 (grunnleggende)
 // Legg til "Hammerfest" med push, og skriv ut den siste byen og det nye antallet.
-// Tips: siste element er byer[byer.length - 1]
+// Tips: siste element er byer[byer.length - 1](Er dette en feil?)
 // Forventet: Hammerfest
 //            6
 
+console.log("Oppgave 21:")
+
+//Jeg endret byer til byer2 siden begge oppgaver er på samme dokumentet
+const byer2 = ["Tromsø", "Bodø", "Alta", "Harstad", "Narvik"];
+byer2.push("Hammerfest"); {
+    Object.keys(byer2).length = length;
+    
+   System.out.println("Hammerfest" + length);
+}
 
 // Oppgave 22 (middels)
 // Skriv ut alle byene med en for-løkke.
 // Forventet: Tromsø, Bodø, Alta, Harstad, Narvik, Hammerfest (én per linje)
 
+console.log("Oppgave 22:")
+
+const byer3 = ["Tromsø", "Bodø", "Alta", "Harstad", "Narvik"];
+byer3.push("Hammerfest"); {
+
+   System.out.println(byer3);
+}
 
 // Oppgave 23 (middels)
 // const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
 // Tell hvor mange dager det var kaldere enn -5. Bruk for og if.
 // Forventet: 3
 
+console.log("Oppgave 23:")
+
+const temperatur = [-4, -6, -2, -1, -8, -11, -3]; 
+for (temperatur > -5;) {
+    Object.keys(temperatur).length = length;
+
+    System.out.println(length > -5);
+}
 
 // Oppgave 24 (avansert)
 // const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"];
@@ -292,7 +378,33 @@ if (skydekke < 30 && time <= 18) {
 //            [ 'sverd', 'skjold', 'fiskestang' ]
 
 
+console.log("Oppgave 23:") //Jeg vet ikke hvorfor den gjør det her
+
+const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"]; {
+    Object.keys("drikk").length = length;
+}
+const inventory2 = ["sverd", "skjold", "fiskestang"]; {
+    
+    
+    Object.keys(inventory2).length = length;
+
+    System.out.println(length);
+}
+
 // Oppgave 25 (avansert)
 // inventory er const, men push virker likevel. Hvorfor?
 // Skriv svaret i oppgavearket.
 // Forventet: ingenting i konsollen
+
+console.log("Oppgave 25:")
+
+const inventory3 = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"]; {
+    Object.keys("drikk").length = length;
+}
+const inventory4 = ["sverd", "skjold", "fiskestang"]; {
+    Object.keys(inventory4).length = length;
+
+    System.out.println(length);
+}
+
+//Jeg tror det er fordi at det ikke egentlig er en nettside, så konsollen er tom
