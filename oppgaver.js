@@ -364,7 +364,7 @@ byer3.push("Hammerfest"); {
 console.log("Oppgave 23:")
 
 const temperatur = [-4, -6, -2, -1, -8, -11, -3]; 
-for (temperatur > -5;) {
+for (temperatur > -5); {
     Object.keys(temperatur).length = length;
 
     System.out.println(length > -5);
